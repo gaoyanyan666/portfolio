@@ -1,0 +1,96 @@
+    body {
+        font-family: 'Roboto Condensed', sans-serif;
+    }
+    
+    .foio {
+        color: crimson;
+        letter-spacing: 3px;
+    }
+    
+    .navbar-brand {
+        letter-spacing: 3px;
+    }
+    
+    .navbar-toggler {
+        border: none;
+    }
+    
+    .navbar-toggler:focus {
+        border: none;
+        outline: none;
+    }
+    /* burger menu */
+    
+    .navbar-toggler div {
+        width: 30px;
+        height: 3px;
+        background-color: rgba(255, 255, 255, 0.952);
+        margin: 5px;
+    }
+    
+    .nav-link {
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        text-align: center;
+    }
+    
+    .nav-item {
+        margin: auto 1.5rem;
+    }
+    
+    @media screen and (max-width:767px) {
+        .navbar-nav {
+            align-items: center;
+            height: 92vh;
+            width: 100%;
+            top: 8vh;
+        }
+        .nav-item {
+            opacity: 0;
+        }
+        .nav-link {
+            padding: 3rem;
+        }
+        @keyframes navItemFade {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0px);
+            }
+        }
+    }
+    /*burger animation */
+    
+    .toggle .line1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+    
+    .toggle .line2 {
+        opacity: 0;
+    }
+    
+    .toggle .line3 {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+    
+    .navbar-toggler {
+        transition: all 0.3s ease;
+    }
+    /*link text animation */
+    
+    @keyframes linkTextTrans {
+        from {
+            font-size: 1rem;
+            background-color: #
+        }
+        to {
+            font-size: 2rem;
+        }
+    }
+    
+    .row {
+        height: 100vh;
+    }
