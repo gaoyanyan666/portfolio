@@ -94,3 +94,35 @@
     .row {
         height: 100vh;
     }
+    /* animation css */
+    
+    #left {
+        animation: arm 1s infinite linear;
+        transform-origin: center;
+        transform-box: fill-box;
+    }
+    
+    @keyframes arm {
+        from {
+            transform: rotateZ(0deg);
+        }
+        to {
+            transform: rotateZ(-8deg);
+        }
+    }
+    
+    #leaf_2,
+    #leaf_1 {
+        animation: leaf 1s infinite linear;
+        transform-origin: center;
+        transform-box: fill-box;
+    }
+    
+    @keyframes leaf {
+        from {
+            transform: rotateZ(0deg);
+        }
+        to {
+            transform: rotateZ(-4deg);
+        }
+    }
