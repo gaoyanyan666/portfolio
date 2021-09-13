@@ -1,3 +1,10 @@
+:root {
+    --color-white: #f3f3f3;
+    --color-lightpink: rgba(247, 185, 204, 0.7);
+    --color-darkpink: rgba(196, 34, 115, 0.8);
+    --color-green: #37af65;
+}
+
 body {
     font-family: 'Roboto Condensed', sans-serif;
     overflow-x: hidden;
@@ -15,6 +22,9 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-image: url('img/header.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 header h1 {
@@ -33,13 +43,7 @@ header>p {
     text-align: inherit;
     text-transform: uppercase;
     letter-spacing: 2px;
-}
-
-hr {
-    width: 22rem;
-    height: .5px;
-    background-color: rgba(255, 255, 255, 0.7);
-    margin: 2rem;
+    color: white;
 }
 
 
@@ -146,7 +150,7 @@ hr {
 }
 
 
-/*link text animation */
+/*about underline*/
 
 .header-bar {
     background: #444649;
@@ -155,11 +159,16 @@ hr {
     width: 70px;
 }
 
-.header {
-    color: #444649;
-    font-size: 25pt;
-    position: relative;
-    padding-top: 4rem;
+
+/*bootstrap mobile gutter fix */
+
+.container-fluid {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+
+.container {
+    height: 100vh;
 }
 
 .row-content {
@@ -170,16 +179,16 @@ hr {
 }
 
 .carousel {
-    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
 }
 
 .carousel-caption {
-    bottom: 17rem;
+    bottom: 4rem;
     background-color: rgba(0, 0, 0, 0.7);
 }
 
 .carousel-caption h5 {
-    font-size: 45px;
+    font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-top: 25px;
@@ -188,7 +197,7 @@ hr {
 .carousel-caption p {
     width: 60%;
     margin: auto;
-    font-size: 18px;
+    font-size: 1.2rem;
     line-height: 1.9;
 }
 
@@ -200,39 +209,6 @@ hr {
     color: #fff;
     margin-top: 15px;
 }
-
-
-/* carousel slider 
-
-
-
-
-
-.carousel-caption {
-    bottom: 20%;
-    position: absolute!important;
-    transform: translateY(-40%);
-    text-transform: uppercase;
-    background-color: rgba(0, 0, 0, 0.7);
-    text-align: center;
-}
-
-.carousel-caption h5 {
-    font-size: 2.5rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-top: 25px;
-}
-
-.carousel-caption a {
-    text-transform: uppercase;
-    padding: 10px 30px;
-    display: inline-block;
-    color: #fff;
-    margin-top: 1rem;
-}
-
-*/
 
 
 /* animation css */
@@ -269,4 +245,77 @@ hr {
 }
 
 
-/* about section */
+/*============= MEDIA QUERIES =============*/
+
+
+/* Devices under 1199px (xl) */
+
+@media (max-width: 1199.98px) {}
+
+
+/* Devices under 768px (md) */
+
+@media (max-width: 767.98px) {}
+
+
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
+
+
+/*-- Bootstrap Mobile Gutter Fix 
+
+.row,
+.container-fluid {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+
+
+/*-- Fixed Background Image --
+
+.fixed-background {
+    position: relative;
+    width: 100%;
+    z-index: 1000!important;
+}
+
+.fixed-wrap {
+    clip: rect(0, auto, auto, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -999 !important;
+}
+
+.fixed {
+    z-index: -999!important;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    will-change: transform;
+}
+--*/
