@@ -17,27 +17,18 @@
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <!-- endbuild -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
-
-    <title>Anna's portfolio project</title>
+    <title>Anna's portfolio project home page</title>
 </head>
 
 <body data-spy="scroll" data-target="#navbarResponsive">
-    <!--header/home section-->
-    <header id="home" style="background-image: url('img/matrix.jpg')">
-        <h1 class="text-center text-white">你好!</h1>
-        <!-- horizontal line -->
-        <div class="border-top border-success w-25 mx-auto my-3"></div>
-        <p>welcome to my website</p>
-        <a href="#about" class="btn btn-outline-light btn-lg">Start</a>
-    </header>
-
-
     <!-- Navigation section -->
     <nav class="navbar navbar-expand-md navbar-dark fixed-top">
         <!-- logo -->
-        <a class="navbar-brand" href="#home">Gao</a>
+        <a class="navbar-brand text-danger" href="index.html">Gao</a>
         <!-- burger menu -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                    <div class="line1"></div>
@@ -46,120 +37,262 @@
                 </button>
         <!--nav items-->
         <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#home">Home<span class="sr-only">(current)</span></a>
-                </li>
+            <ul class="navbar-nav ml-auto ">
                 <li class="nav-item">
-                    <a class="nav-link" href="#about">About</a>
+                    <a class="nav-link active " href="#home">Home</a><span class="sr-only ">(current)</span>
+                    </a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                <li class="nav-item ">
+                    <a class="nav-link " href="#about">About</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
+                <li class="nav-item ">
+                    <a class="nav-link " href="#portfolio">Portfolio</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link " href="#contact">Contact</a>
                 </li>
             </ul>
         </div>
     </nav>
 
+    <!--home section-->
+    <div id="home" style="background-image:linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)), url('img/woman.jpg')">
+        <h1 class="text-white py-4">HELLO</h1>
+        <h1 class="text-center text-white ">你好!</h1>
+        <!-- horizontal line -->
+        <div class="border-top border-success w-25 mx-auto my-3 "></div>
+        <p>WELCOME TO MY WEBSITE</p>
+        <a href="#about " class="btn btn-outline-light btn-lg ">Start</a>
+    </div>
     <!--about section-->
     <div class="container" id="about">
-        <div class="row">
-            <div class="col text-center mt-5">
+        <div class="row ">
+            <div class="col text-center mt-5 ">
                 <h2>ABOUT ME</h2>
                 <!--underline-->
-                <div class="header-bar mx-auto"></div>
+                <div class="header-bar mx-auto "></div>
             </div>
         </div>
-        <div class="row">
+        <div class="row mx-auto ">
             <!--carousel indicators-->
             <div id="homeCarousel" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#homeCarousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#homeCarousel" data-slide-to="1"></li>
-                    <li data-target="#homeCarousel" data-slide-to="2"></li>
+                <ol class="carousel-indicators ">
+                    <li data-target="#homeCarousel" data-slide-to="0 " class="active "></li>
+                    <li data-target="#homeCarousel" data-slide-to="1 "></li>
+                    <li data-target="#homeCarousel" data-slide-to="2 "></li>
                 </ol>
-                <div class="carousel-inner" role="listbox" data-interval="4000">
+                <div class="carousel-inner " role="listbox " data-interval="4000 ">
+                    <!--first carousel slide-->
                     <div class="carousel-item active ">
-                        <img src="img/slide_1.jpeg" alt="" class="d-block w-100">
+                        <img src="img/slide_1.jpeg " alt=" " class="d-block w-100 ">
                         <div class="carousel-caption d-none d-md-block ">
-                            <h5 class="animated bounceInRight" style="animation-delay: 1s">Web Development</h5>
-                            <p class="animated bounceInRight" style="animation-delay: 2s">
-                                <a class="btn btn-outline-light" href="#">More Info</a>
+                            <h5 class="animated bounceInRight " style="animation-delay: 1s ">Web Development</h5>
+                            <p class="animated bounceInRight " style="animation-delay: 2s ">
+                                <a class="btn btn-outline-light " href="about.html ">More Info</a>
                             </p>
                         </div>
-
                     </div>
                     <!--second carousel slide-->
                     <div class="carousel-item ">
-                        <img src="img/slide2.jpeg" alt=" " class="d-block w-100">
+                        <img src="img/slide2.jpeg " alt=" " class="d-block w-100 ">
                         <div class="carousel-caption d-none d-md-block ">
-                            <h5 class="animated bounceInLeft" style="animation-delay: 1s">Digital Marketing</h5>
-                            <p class="animated bounceInLeft" style="animation-delay: 2s">
-                                <a class="btn btn-outline-light" href="#">More Info</a>
+                            <h5 class="animated bounceInLeft " style="animation-delay: 1s ">Digital Marketing</h5>
+                            <p class="animated bounceInLeft " style="animation-delay: 2s ">
+                                <a class="btn btn-outline-light " href="about.html ">More Info</a>
                             </p>
                         </div>
                     </div>
                     <!--last carousel slide-->
-                    <div class="carousel-item">
-                        <img src="img/slide3.png" alt=" " class="d-block w-100">
+                    <div class="carousel-item ">
+                        <img src="img/slide3.png " alt=" " class="d-block w-100 ">
                         <div class="carousel-caption d-none d-md-block ">
-                            <h5 class="animated zoomIn" style="animation-delay: 1s">web design</h5>
-                            <p class="animated zoomIn" style="animation-delay: 2s">
-                                <a class="btn btn-outline-light" href="#">More Info</a>
+                            <h5 class="animated zoomIn " style="animation-delay: 1s ">web design</h5>
+                            <p class="animated zoomIn " style="animation-delay: 2s ">
+                                <a class="btn btn-outline-light " href="about.html ">More Info</a>
                             </p>
                         </div>
                     </div>
                 </div>
                 <!--carousel button section-->
-                <a class="carousel-control-prev" href="#homeCarousel" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
+                <a class="carousel-control-prev " href="#homeCarousel " role="button " data-slide="prev ">
+                    <span class="carousel-control-prev-icon " aria-hidden="true "></span>
+                    <span class="sr-only ">Previous</span>
                 </a>
-                <a class="carousel-control-next" href="#homeCarousel" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
+                <a class="carousel-control-next " href="#homeCarousel " role="button " data-slide="next ">
+                    <span class="carousel-control-next-icon " aria-hidden="true "></span>
+                    <span class="sr-only ">Next</span>
                 </a>
             </div>
         </div>
-        <div class="row row-content">
-            <div class="col">
-                <h4 class="text-sm-center " style="text-transform: uppercase;">Copywriter to web developer</h4>
-                <p class="lead d-block text-center">As a Chinese creative copywriter for 5 years in digital marketing in Shanghai, I have big passion on full stack development in Seattle.
+        <div class="row ">
+            <div class="col text-center ">
+                <h4 class="text-sm-center " style="text-transform: uppercase; ">Copywriter to web developer</h4>
+                <p class="lead d-block text-center ">As a Chinese creative copywriter for 5 years in digital marketing in Shanghai, I have big passion on full stack development in Seattle.
                 </p>
             </div>
         </div>
+        <div class="row row-content justify-content-around">
+            <div class="col-4 col-md-2 " id="icon">
+                <i class="fab fa-html5 animated flash " style="animation-delay: 1s "></i>
+            </div>
+            <div class="col-4 col-md-2 " id="icon">
+                <i class="fab fa-css3-alt animated flash " style="animation-delay: 2s "></i>
+            </div>
+            <div class="col-4 col-md-2 " id="icon">
+                <i class="fab fa-js animated flash " style="animation-delay: 3s "></i>
+            </div>
+            <div class="col-4 col-md-2 " id="icon">
+                <i class="fab fa-bootstrap animated flash " style="animation-delay: 4s "></i>
+            </div>
+            <div class="col-4 col-md-2 " id="icon">
+                <i class="fab fa-node animated flash " style="animation-delay: 5s "></i>
+            </div>
+            <div class="col-4 col-md-2 " id="icon">
+                <i class="fab fa-react animated flash " style="animation-delay: 6s "></i>
+            </div>
+        </div>
     </div>
-
     <!-- portfolio section -->
-    <div class="container" id="portfolio">
-        <div class="row">
-            <div class="col text-center mt-5">
+    <div class="container-fluid " id="portfolio">
+        <div class="row ">
+            <div class="col text-center mt-5 ">
                 <h2>PORTFOLIO</h2>
                 <!--underline-->
-                <div class="header-bar mx-auto"></div>
+                <div class="header-bar mx-auto "></div>
             </div>
+        </div>
+        <div class="row no-padding ">
+            <div class="col-sm-4 text-center ">
+                <div class="portfolio ">
+                    <a href="img/portfolio/1.png " target="_blank ">
+                        <img src="img/portfolio/1.png " alt=" ">
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-4 text-center ">
+                <div class="portfolio ">
+                    <a href="img/portfolio/2.png " target="_blank ">
+                        <img src="img/portfolio/2.png " alt=" ">
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-4 text-center ">
+                <div class="portfolio ">
+                    <a href="img/portfolio/3.png " target="_blank ">
+                        <img src="img/portfolio/3.png " alt=" ">
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-4 text-center ">
+                <div class="portfolio ">
+                    <a href="img/portfolio/4.png " target="_blank ">
+                        <img src="img/portfolio/4.png " alt=" ">
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-4 text-center ">
+                <div class="portfolio ">
+                    <a href="img/portfolio/5.png " target="_blank ">
+                        <img src="img/portfolio/5.png " alt=" ">
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-4 text-center ">
+                <div class="portfolio ">
+                    <a href="img/portfolio/6.png " target="_blank ">
+                        <img src="img/portfolio/6.png " alt=" ">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row row-content py-5 ">
+            <a href=" "></a>
         </div>
     </div>
 
 
     <!-- contact section -->
-    <div class="container" id="contact">
-        <div class="row">
-            <div class="col text-center mt-5">
-                <h2>CONTACT</h2>
+    <div class="container-fluid my-5  justify-content-center " id="contact">
+        <div class="row ">
+            <div class="col text-center mt-5 ">
+                <h2 class="animated bounceInLeft " style="animation-delay: 2s ">CONTACT</h2>
                 <!--underline-->
-                <div class="header-bar mx-auto"></div>
+                <div class="header-bar mx-auto animated bounceInRight" style="animation-delay: 1s "></div>
+            </div>
+        </div>
+        <div class="row w-100 py-4 jumbotron">
+            <div class="col-lg-4 mb-4 my-lg-auto ">
+                <h2 class="text-dark font-weight-bold mb-3 ">WHAT ARE YOU EXPECTED</h2>
+                <p class="lead mb-4 ">Looking for quality web development and Chinese digital creative copywriter</p>
+                <a href="contact.html " target="_blank " class="btn btn-outline-dark btn-lg ">CONTACT ME NOW</a>
+            </div>
+            <div class="col-lg-8 ">
+                <img src="img/code.jpg " alt=" " class="d-block w-100 ">
             </div>
         </div>
     </div>
-
+    <footer class="small bg-light ">
+        <div class="container py-1 py-sm-5 ">
+            <div class="row ">
+                <div class="col-6 col-sm-3 ">
+                    <p>LINKS</p>
+                    <ul class="list-unstyled ">
+                        <li><a href="#home ">Home</a></li>
+                        <li>
+                            <a href="#about ">About</a>
+                        </li>
+                        <li><a href="#contact ">Contact</a></li>
+                        <li><a href="#portfolio ">Portfolio</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-sm-3 mb-2 ">
+                    <p>FOLLOW ME</p>
+                    <a class="btn btn-social-icon btn-facebook " href="http://facebook.com/ "><i class="fab fa-facebook "></i></a>
+                    <a class="btn btn-social-icon btn-twitter " href="http://wechat.com/ "><i class="fab fa-weixin "></i></a>
+                    <a class="btn btn-social-icon btn-google " href="http://youtube.com/ "><i class="fab fa-youtube "></i></a>
+                </div>
+                <div class="col-6 col-sm-3 ">
+                    <p>CONTACT</p>
+                    <abbr title="Telephone ">Tel:</abbr
+                ><a href="tel:+919876543210 ">1-(206) 123-4567</a><br />
+                <abbr title="Mail ">Email:</abbr
+                ><a href="mailto:info@domain.com ">ggaoyanyan@gmail.com</a>
+                </div>
+                <div class="col-6 col-sm-3 text-center ">
+                    <p>MY RESUME</p>
+                    <a class="btn btn-social-icon btn-lg " href="# "><i class="fas fa-cloud-download-alt "></i></a>
+                </div>
+            </div>
+            <div class="row text-right ">
+                <div class="col-12 col-sm-6 col-md-9 ">
+                    <ul class="list-inline ">
+                        <li class="list-inline-item ">&copy; 2021 Web Company, Inc.</li>
+                        <li class="list-inline-item ">All rights reserved.</li>
+                        <li class="list-inline-item ">
+                            <a href="# ">Terms of use and privacy policy</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 ">
+                    <div class="dropdown dropup p-0 ">
+                        <button type="button" class="btn btn-secondary btn-sm dropdown-toggle " id="dropdownMenuButton " data-toggle="dropdown" aria-haspopup="true " aria-expanded="false ">
+                  Visit other sites:
+                </button>
+                        <div class="dropdown-menu " aria-labelledby="dropdownMenuButton ">
+                            <a href="# " class="dropdown-item ">www.otherwebsite.com</a>
+                            <a href="# " class="dropdown-item ">www.newwebsite.com</a>
+                            <a href="# " class="dropdown-item ">www.oldwebsite.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
     <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN " crossorigin="anonymous "></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js " integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q " crossorigin="anonymous "></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js " integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl " crossorigin="anonymous "></script>
-    <script src="js/scripts.js"></script>
+    <script src="js/scripts.js "></script>
 </body>
 
 </html>

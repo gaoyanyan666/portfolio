@@ -11,42 +11,6 @@ body {
 }
 
 
-/* header */
-
-header {
-    width: 100%;
-    height: 100vh;
-    min-height: 40em;
-    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-image: url('img/header.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-header h1 {
-    display: inline-block;
-    margin: 0 0.5rem;
-    animation: bounce;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-}
-
-header>p {
-    display: block;
-    font-size: 1.5em;
-    margin: 1em 0 2em 0;
-    line-height: 1.5em;
-    text-align: inherit;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: white;
-}
-
-
 /* burger menu */
 
 .navbar-toggler {
@@ -100,7 +64,7 @@ header>p {
 @media screen and (max-width:767px) {
     .navbar-nav {
         align-items: center;
-        height: 100vh;
+        height: 50vh;
         width: 100%;
         top: 8vh;
     }
@@ -150,6 +114,72 @@ header>p {
 }
 
 
+/* header */
+
+#home {
+    width: 100%;
+    height: 100vh;
+    min-height: 40em;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)), url('img/woman.jpg')";
+
+}
+
+#home h1 {
+    display: inline-block;
+    margin: 0 0.5rem;
+    animation: bounce;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+#home>p {
+    display: block;
+    font-size: 1.5em;
+    margin: 1em 0 2em 0;
+    line-height: 1.5em;
+    text-align: inherit;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: white;
+}
+
+
+/*typing effect
+
+.typing {
+    position: relative;
+    margin-left: 10px;
+    color: white;
+}
+
+.typing::after {
+    content: '';
+    position: absolute;
+    right: -5px;
+    width: 1px;
+    height: 50%;
+    border-right: 2px solid white;
+    animation: blink .5s infinite ease;
+}≈
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}*/
+
+
 /*about underline*/
 
 .header-bar {
@@ -159,24 +189,17 @@ header>p {
     width: 70px;
 }
 
-
-/*bootstrap mobile gutter fix */
-
-.container-fluid {
-    margin-left: 0px !important;
-    margin-right: 0px !important;
+.flash {
+    animation-duration: 7s;
 }
 
-.container {
-    height: 100vh;
+.flash:hover {
+    transform: scale(1.1);
+    cursor: zoom-in;
 }
 
-.row-content {
-    margin: 0;
-    padding: 50px 0;
-    border-bottom: 1px ridge;
-    min-height: 200px;
-}
+
+/*carousel */
 
 .carousel {
     box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
@@ -211,7 +234,70 @@ header>p {
 }
 
 
-/* animation css */
+/*portfolio*/
+
+.row-content {
+    margin: 0;
+    padding: 2rem;
+    border-bottom: 1px ridge;
+}
+
+.row {
+    padding: 2rem 0;
+}
+
+
+/*row row-content jumbotron  container-fluid set up*/
+
+.jumbotron {
+    margin: 0;
+    padding: 1rem;
+    background-image: grey;
+}
+
+.portfolio img {
+    max-width: 100%;
+    transition: transform .5s ease;
+}
+
+.portfolio img:hover {
+    transform: scale(1.1);
+    cursor: zoom-in;
+}
+
+.portfolio {
+    overflow: hidden;
+}
+
+.row.no-padding [class*=col-] {
+    padding: 0;
+}
+
+
+/*contact*/
+
+
+/*footer*/
+
+footer {
+    background-color: grey;
+}
+
+
+/*bootstrap mobile gutter fix */
+
+.container-fluid {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    justify-content: center;
+}
+
+.fab {
+    font-size: 5rem;
+}
+
+
+/* ABOUT animation css */
 
 #left {
     animation: arm 1s infinite linear;
