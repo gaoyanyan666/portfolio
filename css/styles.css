@@ -255,6 +255,19 @@ body {
     background-image: grey;
 }
 
+
+/*portfolio card hover effect*/
+
+.portfolio {
+    overflow: hidden;
+    position: relative;
+    transition: all .3s east-out
+}
+
+.row.no-padding [class*=col-] {
+    padding: 0;
+}
+
 .portfolio img {
     max-width: 100%;
     transition: transform .5s ease;
@@ -263,14 +276,64 @@ body {
 .portfolio img:hover {
     transform: scale(1.1);
     cursor: zoom-in;
+    opacity: 0.3;
 }
 
-.portfolio {
+
+/*portfolio  card hover description effect*/
+
+.portfolio .description {
     overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 13rem;
+    width: 100%;
+    text-align: center;
+    color: crimson;
 }
 
-.row.no-padding [class*=col-] {
-    padding: 0;
+.portfolio .description:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.portfolio .description h5 {
+    margin: 0 0 1rem;
+    opacity: 0;
+    transform: translateY(-7rem);
+    transition: all 0.3s ease-out;
+}
+
+.portfolio .description p {
+    transform: translateY(-7rem);
+    opacity: 0;
+    transition: all 0.3s ease-out;
+}
+
+.portfolio .description a {
+    color: crimson;
+    transform: translateY(7rem);
+    opacity: 0;
+    transition: all 0.3s ease-out;
+}
+
+.portfolio .description a:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.portfolio:hover .description h5 {
+    opacity: 1;
+    transform: translateY(-2rem);
+}
+
+.portfolio:hover .description p {
+    opacity: 1;
+    transform: translateY(-1rem);
+}
+
+.portfolio:hover .description a {
+    opacity: 1;
+    transform: translateY(4rem);
 }
 
 
