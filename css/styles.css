@@ -13,6 +13,15 @@ body {
 
 /* burger menu */
 
+.fa-bars {
+    font-size: 1.7em;
+}
+
+.fa-times {
+    font-size: 3em;
+    color: grey;
+}
+
 .navbar-toggler {
     border: none;
 }
@@ -37,7 +46,7 @@ body {
     letter-spacing: .1rem;
     font-size: 0.9rem;
     text-align: center;
-    background: rgba(0, 0, 0, .8)!important;
+    background: rgba(0, 0, 0, .9)!important;
 }
 
 
@@ -62,11 +71,16 @@ body {
 }
 
 @media screen and (max-width:767px) {
+    .closeButton {
+        right: 1.5rem;
+        position: absolute;
+    }
     .navbar-nav {
         align-items: center;
-        height: 50vh;
+        height: 100vh;
         width: 100%;
         top: 8vh;
+        font-size: 1.5rem;
     }
     .nav-item {
         opacity: 0;
@@ -77,19 +91,9 @@ body {
     @keyframes navItemFade {
         from {
             opacity: 0;
-            transform: translateY(50px);
         }
         to {
             opacity: 1;
-            transform: translateY(0px);
-        }
-    }
-    @keyframes linkTextTrans {
-        from {
-            font-size: .9rem;
-        }
-        to {
-            font-size: 2rem;
         }
     }
 }
@@ -97,24 +101,12 @@ body {
 
 /*burger animation */
 
-.toggle .line1 {
-    transform: rotate(-45deg) translate(-5px, 6px);
-}
-
-.toggle .line2 {
-    opacity: 0;
-}
-
-.toggle .line3 {
-    transform: rotate(45deg) translate(-5px, -6px);
-}
-
 .navbar-toggler {
     transition: all 0.3s ease;
 }
 
 
-/* header */
+/* home page background */
 
 #home {
     width: 100%;
@@ -152,34 +144,6 @@ body {
 }
 
 
-/*typing effect
-
-.typing {
-    position: relative;
-    margin-left: 10px;
-    color: white;
-}
-
-.typing::after {
-    content: '';
-    position: absolute;
-    right: -5px;
-    width: 1px;
-    height: 50%;
-    border-right: 2px solid white;
-    animation: blink .5s infinite ease;
-}≈
-
-@keyframes blink {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}*/
-
-
 /*about underline*/
 
 .header-bar {
@@ -189,12 +153,9 @@ body {
     width: 70px;
 }
 
-.flash {
-    animation-duration: 7s;
-}
-
-.flash:hover {
-    transform: scale(1.4);
+#icon i:hover {
+    transition: transform 1s ease-in;
+    transform: scale(1.5);
     cursor: zoom-in;
 }
 
@@ -240,10 +201,7 @@ body {
     margin: 0;
     padding: 2rem;
     border-bottom: 1px ridge;
-}
-
-.row {
-    padding: 2rem 0;
+    justify-content: center;
 }
 
 
@@ -397,6 +355,144 @@ footer {
 }
 
 
+/*============= ABOUT PAGE CSS =============*/
+
+.card-box {
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    margin: 1rem auto;
+    cursor: pointer;
+}
+
+.card-box-front {
+    position: relative;
+    backface-visibility: hidden;
+    transition: all 0.3s ease-in-out;
+    transform: perspective(500px) rotateY(0deg);
+}
+
+.card-box-front img {
+    min-width: 100%;
+    max-width: 100%;
+    display: block;
+}
+
+.card-box-back {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background: lightcyan;
+    backface-visibility: hidden;
+    transition: all 0.3s ease-in-out;
+    transform: perspective(500px) rotateY(180deg);
+}
+
+.card-box:hover .card-box-front {
+    transform: perspective(500px) rotateY(-180deg);
+}
+
+.card-box:hover .card-box-back {
+    transform: perspective(500px) rotateY(0deg);
+}
+
+.card-box-back h4 {
+    font-size: 30px;
+}
+
+.card-box-back-in {
+    width: 100%;
+    text-align: center;
+}
+
+.social_links a {
+    font-size: 30px;
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.social_links a i {
+    color: gray;
+}
+
+.social_links a:hover .fa-facebook-square {
+    color: #3b5998
+}
+
+.social_links a:hover .fa-linkedin {
+    color: #0e76a8
+}
+
+.social_links a:hover .fa-instagram-square {
+    color: #3f729b
+}
+
+.social_links a:hover .fa-youtube-square {
+    color: #c4302b
+}
+
+
+/*============= contact PAGE CSS =============*/
+
+textarea {
+    overflow-y: scroll;
+    height: 100px;
+    resize: none
+}
+
+.skill_row {
+    background: lightgray;
+    height: 15px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.skill_view {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    border-radius: 10px;
+    z-index: 1;
+    background: #080b77;
+    /*transition: all 0.8s ease-out;
+	overflow: hidden;*/
+}
+
+.skill_value {
+    position: absolute;
+    left: 100%;
+    bottom: 100%;
+    transform: translateX(-60%);
+    background-color: #080b77;
+    color: #fff;
+    line-height: 20px;
+    padding: 0 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.skill_value:after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -3px;
+    border-top: 5px solid #080b77;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+}
+
+
+/*============= PORTFOLIO PAGE CSS =============*/
+
+
 /*============= MEDIA QUERIES =============*/
 
 
@@ -535,46 +631,3 @@ Extra (xl) large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { ... }
 
 =============*/
-
-
-/*-- Bootstrap Mobile Gutter Fix 
-
-.row,
-.container-fluid {
-    margin-left: 0px !important;
-    margin-right: 0px !important;
-}
-
-
-/*-- Fixed Background Image --
-
-.fixed-background {
-    position: relative;
-    width: 100%;
-    z-index: 1000!important;
-}
-
-.fixed-wrap {
-    clip: rect(0, auto, auto, 0);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -999 !important;
-}
-
-.fixed {
-    z-index: -999!important;
-    display: block;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center center;
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-    will-change: transform;
-}
---*/
