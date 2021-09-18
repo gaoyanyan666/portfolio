@@ -22,22 +22,6 @@ body {
     color: grey;
 }
 
-.navbar-toggler {
-    border: none;
-}
-
-.navbar-toggler:focus {
-    border: none;
-    outline: none;
-}
-
-.navbar-toggler div {
-    width: 30px;
-    height: 3px;
-    background-color: rgba(255, 255, 255, 0.952);
-    margin: 5px;
-}
-
 
 /* navbar */
 
@@ -47,6 +31,15 @@ body {
     font-size: 0.9rem;
     text-align: center;
     background: rgba(0, 0, 0, .9)!important;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler:focus {
+    border: none;
+    outline: none;
 }
 
 
@@ -71,10 +64,6 @@ body {
 }
 
 @media screen and (max-width:767px) {
-    .closeButton {
-        right: 1.5rem;
-        position: absolute;
-    }
     .navbar-nav {
         align-items: center;
         height: 100vh;
@@ -91,19 +80,38 @@ body {
     @keyframes navItemFade {
         from {
             opacity: 0;
+            transform: translateY(5rem);
         }
         to {
             opacity: 1;
+            transform: translateY(3rem);
         }
     }
 }
 
+@media screen and (min-width:767px) {
+    #openButton {
+        display: none;
+    }
+    #closeButton {
+        display: none;
+    }
+}
 
-/*burger animation */
+
+/*burger animation 
+
+.navbar-toggler div {
+    width: 30px;
+    height: 3px;
+    background-color: rgba(255, 255, 255, 0.952);
+    margin: 5px;
+}
 
 .navbar-toggler {
-    transition: all 0.3s ease;
+    transition: all 03s ease;
 }
+*/
 
 
 /* home page background */
@@ -318,40 +326,6 @@ footer {
 
 .fab {
     font-size: 5rem;
-}
-
-
-/* ABOUT animation css */
-
-#left {
-    animation: arm 1s infinite linear;
-    transform-origin: center;
-    transform-box: fill-box;
-}
-
-@keyframes arm {
-    from {
-        transform: rotateZ(0deg);
-    }
-    to {
-        transform: rotateZ(-8deg);
-    }
-}
-
-#leaf_2,
-#leaf_1 {
-    animation: leaf 1s infinite linear;
-    transform-origin: center;
-    transform-box: fill-box;
-}
-
-@keyframes leaf {
-    from {
-        transform: rotateZ(0deg);
-    }
-    to {
-        transform: rotateZ(-4deg);
-    }
 }
 
 
